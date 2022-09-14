@@ -4,14 +4,15 @@ const characters =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","
 const generatePasswordBtn = document.getElementById("pwdButton");
 const passwordDisplayOne = document.getElementById("pwdOne");
 const passwordDisplayTwo = document.getElementById("pwdTwo");
+const passwordLength = document.getElementById("input-length")
 
-
+console.log(passwordLength.value)
 generatePasswordBtn.addEventListener("click", generatePassword);
 
 function generatePassword() {
     let randomPasswordOne = "";
     let randomPasswordTwo = "";
-    for(let i = 0; i < 15; i++) {
+    for(let i = 0; i < passwordLength.value; i++) {
         randomPasswordOne += getrandomCharacter();
         randomPasswordTwo += getrandomCharacter();
     }
@@ -22,4 +23,8 @@ function generatePassword() {
 function getrandomCharacter() {
     let randomChar = Math.floor(Math.random() * characters.length);
     return characters[randomChar];
+}
+
+window.onload = function(){
+    passwordLength.value=""
 }
