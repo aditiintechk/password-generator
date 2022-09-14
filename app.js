@@ -5,4 +5,7 @@ const generatePasswordBtn = document.getElementById("pwdButton");
 const passwordDisplayOne = document.getElementById("pwdOne");
 const passwordDisplayTwo = document.getElementById("pwdTwo");
 
-
+function getrandomCharacter() {
+    let randomChar = Math.floor(Math.random() * characters.length);
+    return characters[randomChar];
+}
