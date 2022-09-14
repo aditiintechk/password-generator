@@ -4,20 +4,26 @@ const characters =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","
 const generatePasswordBtn = document.getElementById("pwdButton");
 const passwordDisplayOne = document.getElementById("pwdOne");
 const passwordDisplayTwo = document.getElementById("pwdTwo");
-const passwordLength = document.getElementById("input-length")
+const passwordLength = document.getElementById("input-length");
+const alertText = document.getElementById("alert-text");
 
 console.log(passwordLength.value)
 generatePasswordBtn.addEventListener("click", generatePassword);
 
 function generatePassword() {
-    let randomPasswordOne = "";
-    let randomPasswordTwo = "";
-    for(let i = 0; i < passwordLength.value; i++) {
-        randomPasswordOne += getrandomCharacter();
-        randomPasswordTwo += getrandomCharacter();
+    if(passwordLength.value > 20) {
+        alertText.textContent = "Please Try Again!";
+    } else {
+        alertText.textContent = ""
+        let randomPasswordOne = "";
+        let randomPasswordTwo = "";
+        for(let i = 0; i < passwordLength.value; i++) {
+            randomPasswordOne += getrandomCharacter();
+            randomPasswordTwo += getrandomCharacter();
+        }
+        passwordDisplayOne.textContent = randomPasswordOne;
+        passwordDisplayTwo.textContent = randomPasswordTwo;
     }
-    passwordDisplayOne.textContent = randomPasswordOne;
-    passwordDisplayTwo.textContent = randomPasswordTwo;
 }
 
 function getrandomCharacter() {
