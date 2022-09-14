@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Karla:wght@500;600;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,6 +8,7 @@
 
 body {
     /* background-color: #1C1C1C; */
+    font-family: 'Inter', sans-serif;
     color: #fff;
     height: 100vh;
     display: flex;
@@ -26,4 +29,27 @@ body {
 
     padding: 0 50px;
 }
+
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    width: 354px;
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 40px;
+    letter-spacing: -0.025em;
+    margin-bottom: 10px;
+}
+
+h1 span {
+    color: #4ADF86
+}
+
+h3 {
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 50px;
+}
+
 
