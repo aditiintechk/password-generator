@@ -37,8 +37,3 @@ function getrandomCharacter() {
     let randomChar = Math.floor(Math.random() * characters.length);
     return characters[randomChar];
 }
-
-// on load > empty the value in input field
-window.onload = function(){
-    passwordLength.value=""
-}
