@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Karla:wght@500;600;700&display=swap');
 
+
+:root {
+
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -144,37 +150,36 @@ input::-webkit-inner-spin-button {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* margin: 0 auto;
-        height: 100vh; */
     }
+
     .main {
         width: 100vw;
         height: 100vh;
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         width: 80vw;
         line-height: 1;
     }
 
     h3 {
-        font-size: 0.6rem;
+        font-size: 1rem;
     }
     
     button {
-        width: 8rem;
+        width: 10rem;
         height: 2rem;
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     #input-length {
-        width: 10rem;
+        width: 14rem;
         height: 2rem;
     }
 
     input::-webkit-input-placeholder {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
 
     #alert-text {
@@ -190,8 +195,9 @@ input::-webkit-inner-spin-button {
         margin-top: 0;
     }
     .password {
-        width: 10rem;
+        width: 14rem;
         height: 2rem;
         margin-bottom: 1rem;
+        font-size: 0.7rem;
     } 
 }
