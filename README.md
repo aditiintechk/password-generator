@@ -5,9 +5,19 @@ Repo URL: [Password Generator Code](https://github.com/Aditi002-holo/password-ge
 
 ## Unit Converter
 
-![](./screenshot.JPG)
+Initial State
 
-![](./screenshot_02.JPG)
+![](./images/screenshot.JPG)
+
+
+Populated State
+
+![](./images/screenshot-populated.JPG)
+
+
+Light Theme 
+
+![](./images/screenshot-light-theme.JPG)
 
 ## What did I learn?
 
