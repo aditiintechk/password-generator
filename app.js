@@ -38,6 +38,28 @@ function getrandomCharacter() {
     return characters[randomChar];
 }
 
+// click to copyToCLipboard option
+
+const copyPwdEl = document.getElementById("copy-pwd");
+function copy(currentPwd) {
+    navigator.clipboard.writeText(currentPwd.textContent).then(function() {
+        let pwd = currentPwd.textContent;
+        if(pwd === '') {
+            copyPwdEl.textContent = "Password is not Generated";
+        } else {
+            copyPwdEl.textContent = "Password is Copied to Clipboard";
+            console.log(currentPwd.textContent);
+        }
+    });
+
+    setTimeout(function () {
+        copyPwdEl.textContent = "Click to Copy the Password";
+        copyPwdEl.style.display = none;
+      }, 3000);
+
+}
+
+
 // setting the theme
 
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
