@@ -25,6 +25,9 @@ Light Theme
 - Rendering content
 - Generating Random Characters of specific length
 - Adding input field
+- Adding theme toggle
+- CopyToClipboard option with clipboard.writeText()
+- Using this in onclick()
 
 ## Resources
 
