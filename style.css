@@ -2,7 +2,14 @@
 
 
 :root {
-
+    --clr-bg: #1F2937;
+    --clr-header: #FFF;
+    --clr-span: #4ADF86;
+    --clr-support-txt: #D5D4D8;
+    --clr-button: #10B981;
+    --clr-pwd-bg: #273549;
+    --clr-pwd-txt: #55F991;
+    --clr-line: #2F3E53;
 }
 
 
@@ -15,7 +22,6 @@
 body {
     background-color: #1C1C1C;
     font-family: 'Inter', sans-serif;
-    color: #fff;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -26,7 +32,7 @@ body {
 .main {
     width: 550px;
     height: 550px;
-    background-color: #1F2937;
+    background-color: var(--clr-bg);
 
     display: flex;
     justify-content: center;
@@ -47,10 +53,11 @@ h1 {
     line-height: 40px;
     letter-spacing: -0.025em;
     margin-bottom: 10px;
+    color: var(--clr-header);
 }
 
 h1 span {
-    color: #4ADF86
+    color: var(--clr-span);
 }
 
 /* description */
@@ -58,6 +65,7 @@ h3 {
     font-weight: 200;
     font-size: 20px;
     margin-bottom: 40px;
+    color: var(--clr-support-txt);
 }
 
 /* button */
@@ -71,7 +79,7 @@ button {
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
     border: none;
 
-    background: #10B981;
+    background: var(--clr-button);
     font-family: inherit;
     font-size: 14px;
     color: #fff;
@@ -118,7 +126,7 @@ input::-webkit-inner-spin-button {
 .line {
     width: 446px;
     /* important!! */
-    border-bottom: 1px solid #2F3E53;
+    border-bottom: 1px solid var(--clr-line);
 }
 
 /* password container */
@@ -135,14 +143,14 @@ input::-webkit-inner-spin-button {
     height: 40px;
     border: none;
     border-radius: 6px;
-    background-color: #273549;
+    background-color: var(--clr-pwd-bg);
     margin-right: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: inherit;
     font-size: 15px;
-    color: #55F991;
+    color: var(--clr-pwd-txt);
 } 
 
 @media((max-width: 600px)) {
