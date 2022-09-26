@@ -3,7 +3,7 @@
 Live URL: [Password Generator](https://aditi002-holo.github.io/password-generator/) <br/>
 Repo URL: [Password Generator Code](https://github.com/Aditi002-holo/password-generator)
 
-## Unit Converter
+## Design
 
 Initial State
 
