@@ -3,11 +3,15 @@ const characters =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","
 "/"];
 
 // target elements
-const generatePasswordBtn = document.getElementById("pwdButton");
-const passwordDisplayOne = document.getElementById("pwdOne");
-const passwordDisplayTwo = document.getElementById("pwdTwo");
-const passwordLength = document.getElementById("input-length");
-const alertText = document.getElementById("alert-text");
+
+function query(id) {
+    return document.getElementById(id);
+}
+const generatePasswordBtn = query("pwdButton");
+const passwordDisplayOne = query("pwdOne");
+const passwordDisplayTwo = query("pwdTwo");
+const passwordLength = query("input-length");
+const alertText = query("alert-text");
 
 // listen to button click
 generatePasswordBtn.addEventListener("click", generatePassword);
