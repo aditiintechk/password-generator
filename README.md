@@ -1,7 +1,7 @@
 # Scrimba Practice Project - Password Generator
 
-Live URL: [Password Generator](https://aditi002-holo.github.io/password-generator/) <br/>
-Repo URL: [Password Generator Code](https://github.com/Aditi002-holo/password-generator)
+Live URL: [Password Generator](https://aditiintechk.github.io/password-generator/) <br/>
+Repo URL: [Password Generator Code](https://github.com/aditiintechk/password-generator)
 
 ## Design
 
